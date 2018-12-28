@@ -38,3 +38,5 @@ int main(int argc, char* argv[])
 
 NOTE: the parameters of main() must be exactly as above else SDL
 fails to insert its own SDL_main function before it.
+
+View `example.cpp` to see how the instructions tie together.
