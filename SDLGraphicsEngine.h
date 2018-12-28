@@ -41,6 +41,8 @@ NOTE: the parameters of main() must be exactly as above else SDL
 fails to insert its own SDL_main function before it.
 */
 
+#pragma once
+
 #include <SDL.h>
 #include <memory>
 
