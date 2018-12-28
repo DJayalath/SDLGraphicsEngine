@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class Game : public SDLGraphicsEngine
+class GraphicsEngineRunner : public SDLGraphicsEngine
 {
 public:
 	void OnInitialisation() override
@@ -18,9 +18,9 @@ private:
 
 int main(int argc, char* argv[])
 {
-	Game game;
-	game.ConstructWindow(1280, 720, "Test window");
-	game.Start();
-	game.CleanUp();
+	GraphicsEngineRunner program;
+	program.ConstructWindow(1280, 720, "Test window");
+	program.Start();
+	program.CleanUp();
 	return 0;
 }
