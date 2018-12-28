@@ -5,7 +5,7 @@ A class for quickly setting up and running the SDL graphics library
 A class in your main program must override the initialisation and
 update functions in the SDLGraphicsEngine class as below:
 
-```c_cpp
+```cpp
 class GraphicsEngineRunner : public SDLGraphicsEngine
 {
 public:
@@ -25,7 +25,7 @@ private:
 Obviously 'GraphicsEngineRunner' can be renamed to whatever you like. This custom class must then be called in the main function such as
 in the example given below:
 
-```c_cpp
+```cpp
 int main(int argc, char* argv[])
 {
   GraphicsEngineRunner game;
