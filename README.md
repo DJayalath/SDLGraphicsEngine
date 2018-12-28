@@ -25,7 +25,8 @@ private:
 Obviously 'GraphicsEngineRunner' can be renamed to whatever you like. This custom class must then be called in the main function such as
 in the example given below:
 
-```int main(int argc, char* argv[])
+```c_cpp
+int main(int argc, char* argv[])
 {
   GraphicsEngineRunner game;
   game.ConstructWindow(1280, 720, "Test window");
