@@ -19,7 +19,7 @@ public:
 
   void OnUpdate() override
   {
-    // Game loop instructions...
+    // Render loop instructions...
   }
 private:
   // Variables go here
