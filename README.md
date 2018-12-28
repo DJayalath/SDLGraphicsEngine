@@ -1,5 +1,8 @@
 # SDLGameEngine
-A class for quickly setting up and running the SDL graphics library. You should note that this is not intended for fast or efficient graphics manipulation. It's for ease of use in setting up the SDL library in projects that use individual pixel manipulation. Examples of projects this would be useful for are plotting the Mandelbrot set, drawing cells in Conway's Game of Life, demonstrating algorithms visually, etc. this is not suitable for making 2D or 3D games since it only provides individual pixel manipulation functionality.
+A class for quickly setting up and running the SDL graphics library.
+
+## Warning
+You should note that this is not intended for fast or efficient graphics manipulation. It's for ease of use in setting up the SDL library in projects that use individual pixel manipulation. Examples of projects this would be useful for are plotting the Mandelbrot set, drawing cells in Conway's Game of Life, demonstrating algorithms visually, etc. this is not suitable for making 2D or 3D games since it only provides individual pixel manipulation functionality.
 
 ## How to use
 A class in your main program must override the initialisation and
