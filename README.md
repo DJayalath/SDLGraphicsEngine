@@ -31,10 +31,10 @@ in the example given below:
 ```cpp
 int main(int argc, char* argv[])
 {
-  GraphicsEngineRunner game;
-  game.ConstructWindow(1280, 720, "Test window");
-  game.Start();
-  game.CleanUp();
+  GraphicsEngineRunner program;
+  program.ConstructWindow(1280, 720, "Test window");
+  program.Start();
+  program.CleanUp();
   return 0;
 }
 ```
