@@ -7,7 +7,7 @@ HOW TO USE:
 A class in the main program must override the initialisation and
 update functions in the GraphicsEngine class as below:
 
-	class GraphicsEngineRunner : public GraphicsEngine
+	class GraphicsEngineRunner : public SDLGraphicsEngine
 	{
 	public:
 		void OnInitialisation() override
@@ -41,21 +41,19 @@ NOTE: the parameters of main() must be exactly as above else SDL
 fails to insert its own SDL_main function before it.
 */
 
-#pragma once
-
 #include <SDL.h>
 #include <memory>
 
-class GraphicsEngine
+class SDLGraphicsEngine
 {
 public:
-	GraphicsEngine()
+	SDLGraphicsEngine()
 	{
 		// Set all inputs to false initially
 		memset(m_keys, false, NUM_KEYS * sizeof(bool));
 		memset(m_mouse, false, NUM_MOUSE * sizeof(bool));
 	}
-	~GraphicsEngine() {}
+	~SDLGraphicsEngine() {}
 	struct Colour
 	{
 		Colour(Uint8 red, Uint8 green, Uint8 blue)
@@ -136,6 +134,8 @@ public:
 			SDL_UpdateWindowSurface(window);
 		}
 	}
+	bool GetKey(int key_code) { return m_keys[key_code]; }
+	bool GetMouse(int mouse_code) { return m_mouse[mouse_code]; }
 private:
 
 	virtual void OnInitialisation() = 0;
